@@ -6,10 +6,16 @@
             var pic;
             if (sw == 0) {
                 pic = "pic_bulboff.gif"
+                document.getElementById("button1").style.backgroundColor = "inherit";
+                document.getElementById("button2").style.backgroundColor = "darkgray";
             } else {
                 pic = "pic.bulbon.gif"
+                document.getElementById("button2").style.backgroundColor = "inherit";
+                document.getElementById("button1").style.backgroundColor = "darkgray";
             }
             document.getElementById('myImage').src = pic;
+            
+
         }
     </script>
     <body> 
@@ -17,6 +23,9 @@
         <p>
             <button id="button1" type="button" onclick="light(1)">Light On</button>
             <button id="button2" type="button" onclick="light(0)">Light Off</button>
+            <a href="page_with_JS.html">
+                <button id="gotohome" type="button">Go home</button>
+            </a>
         </p>
     </body>
 </html>
