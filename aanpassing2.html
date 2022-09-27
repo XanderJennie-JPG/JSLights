@@ -6,12 +6,12 @@
             var pic;
             if (sw == 0) {
                 pic = "pic_bulboff.gif"
-                document.getElementById("button1").style.backgroundColor = "inherit";
-                document.getElementById("button2").style.backgroundColor = "darkgray";
+                document.getElementById("button1").style.visibility = "visible";
+                document.getElementById("button2").style.visibility = "hidden";
             } else {
                 pic = "pic.bulbon.gif"
-                document.getElementById("button2").style.backgroundColor = "inherit";
-                document.getElementById("button1").style.backgroundColor = "darkgray";
+                document.getElementById("button2").style.visibility = "visible";
+                document.getElementById("button1").style.visibility = "hidden";
             }
             document.getElementById('myImage').src = pic;
             
@@ -28,12 +28,13 @@
             <a href="page_with_JS.html">
                 <button id="gotohome" type="button">Go home</button>
             </a>
-            <a href="aanpassing2.html">
-                <button id="btn_to_A2" type="button">Go to aanpassing 2</button>
+            <a href="aanpassing1.html">
+                <button id="btn_to_A1" type="button">Go to aanpassing 1</button>
             </a>
             <a href="aanpassing3.html">
                 <button id="btn_to_A3" type="button">Go to aanpassing 3</button>
             </a>
         </p>
+
     </body>
 </html>
