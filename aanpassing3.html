@@ -1,0 +1,44 @@
+<html>
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <script>
+        function light(sw) {
+            var pic;
+            if (sw == 0) {
+                document.getElementById("button1").style.backgroundColor = "inherit";
+                document.getElementById("button2").style.backgroundColor = "darkgray";
+                document.getElementById("button2").style.visibility="visible";
+
+            } else {
+                pic = "pic.bulbon.gif"
+                document.getElementById("button2").style.backgroundColor = "inherit";
+                document.getElementById("button1").style.backgroundColor = "darkgray";
+                document.getElementById("button2").style.visibility="visible";
+            }
+            document.getElementById('myImage').src = pic;
+        }
+        window.onload = function(){
+            document.getElementById("button2").style.visibility="Hidden";
+        }
+    </script>
+    <body>
+        
+        <img id="myImage" src="pic_bulboff.gif" width="100" height="180">
+        <p>
+            <button id="button1" type="button" onclick="light(1)">Light On</button>
+            <button id="button2" type="button" onclick="light(0)">Light Off</button>
+        </p>
+        <p>
+            <a href="page_with_JS.html">
+                <button id="gotohome" type="button">Go home</button>
+            </a>
+            <a href="aanpassing1.html">
+                <button id="btn_to_A1" type="button">Go to aanpassing 1</button>
+            </a>
+            <a href="aanpassing3.html">
+                <button id="btn_to_A2" type="button">Go to aanpassing 2</button>
+            </a>
+        </p>
+
+    </body>
+</html>
